@@ -10,22 +10,48 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pch.h" />
-    <ClInclude Include="Game.h" />
-    <ClInclude Include="StepTimer.h">
+    <ClInclude Include="include\pch.h" />
+    <ClInclude Include="src\Application.h" />
+    <ClInclude Include="src\StepTimer.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="DeviceResources.h">
+    <ClInclude Include="src\DeviceResources.h">
       <Filter>Common</Filter>
     </ClInclude>
+    <ClInclude Include="src\volume\MCVolumeRenderer.h" />
+    <ClInclude Include="src\volume\TransferFunction.h" />
+    <ClInclude Include="include\Hawk\Common\Defines.hpp" />
+    <ClInclude Include="include\Hawk\Common\INumberArray.hpp" />
+    <ClInclude Include="include\Hawk\Common\NonCopyable.hpp" />
+    <ClInclude Include="include\Hawk\Common\Singleton.hpp" />
+    <ClInclude Include="include\Hawk\Components\Camera.hpp" />
+    <ClInclude Include="include\Hawk\Components\Transform.hpp" />
+    <ClInclude Include="include\Hawk\Containers\ThreadSafeQueue.hpp" />
+    <ClInclude Include="include\Hawk\Geometry\Generator.hpp" />
+    <ClInclude Include="include\Hawk\Math\Converters.hpp" />
+    <ClInclude Include="include\Hawk\Math\Detail\Matrix.hpp" />
+    <ClInclude Include="include\Hawk\Math\Detail\Quaternion.hpp" />
+    <ClInclude Include="include\Hawk\Math\Detail\Vector.hpp" />
+    <ClInclude Include="include\Hawk\Math\Functions.hpp" />
+    <ClInclude Include="include\Hawk\Math\Geometry.hpp" />
+    <ClInclude Include="include\Hawk\Math\Spline.hpp" />
+    <ClInclude Include="include\Hawk\Math\Transform.hpp" />
+    <ClInclude Include="src\volume\MCTransferFunction.h" />
+    <ClInclude Include="src\volume\MCShaders.h" />
+    <ClInclude Include="src\volume\MCVolumeDataLoader.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="pch.cpp" />
-    <ClCompile Include="Game.cpp" />
-    <ClCompile Include="Main.cpp" />
-    <ClCompile Include="DeviceResources.cpp">
+    <ClCompile Include="include\pch.cpp" />
+    <ClCompile Include="src\Application.cpp" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\DeviceResources.cpp">
       <Filter>Common</Filter>
     </ClCompile>
+    <ClCompile Include="src\volume\MCVolumeRenderer.cpp" />
+    <ClCompile Include="src\volume\TransferFunction.cpp" />
+    <ClCompile Include="src\volume\MCTransferFunction.cpp" />
+    <ClCompile Include="src\volume\MCShaders.cpp" />
+    <ClCompile Include="src\volume\MCVolumeDataLoader.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="resource.rc" />
@@ -39,5 +65,9 @@
     <Manifest Include="settings.manifest">
       <Filter>Assets</Filter>
     </Manifest>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="data\config\transferFunction.json" />
   </ItemGroup>
 </Project>
