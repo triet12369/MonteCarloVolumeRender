@@ -128,8 +128,8 @@ class MCVolumeRenderer
 		uint32_t m_FrameIndex = 0;
 		uint32_t m_SampleDispersion = 8;
 		uint32_t m_SamplingCount = 256;
-		uint32_t m_MaximumSamples = 256;
-		uint32_t m_MinRotateSamples = 16;
+		uint32_t m_MaximumSamples = 64;
+		uint32_t m_MinRotateSamples = 8;
 
 		std::random_device m_RandomDevice;
 		std::mt19937       m_RandomGenerator;
